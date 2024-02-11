@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <meta name="description" content="A simple semantic elements page">
+  <style>
+    label{
+      display: block;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <form action="success.html" method="get">
+    <!-- name -->
+    <label for="e_name">Name:
+      <input name="e_name" id="e_name" type="text" required placeholder="Name">
+    </label> 
+
+    <!-- email -->
+    <label for="e_email">Email:
+      <input name="e_email" id="e_email" type="email" required placeholder="example@gmail.com">
+    </label>
+
+    <!-- phone -->
+    <label for="e_phone">Phone:
+      <input name="e_phone" id="e_phone" type="tel" required placeholder="+91123456789">
+    </label>
+
+    <!-- password -->
+    <label for="e_pass">Password:
+      <input name="e_pass" id="e_pass" type="password" required placeholder="Password">
+    </label>
+
+    <!-- url -->
+    <label for="e_url">Website:
+      <input name="e_url" id="e_url" type="url" required placeholder="https://primeinspiere.com">
+    </label>
+
+    <!-- number -->
+    <label for="e_quantity">Quantity:
+      <input name="e_quantity" id="e_quantity" type="number" required>
+    </label>
+
+    <!-- date -->
+    <label for="e_date">Date:
+      <input name="e_date" id="e_date" type="date" required value="2025-03-02">
+    </label>
+
+    <!-- date readonly -->
+    <label for="e_date">Date:
+      <input name="e_date" id="e_date" type="date" required value="2025-03-02" readonly>
+    </label>
+
+    <!-- date disabled -->
+    <label for="e_date">Date:
+      <input name="e_date" id="e_date" type="date" required value="2025-03-02" disabled>
+    </label>
+
+    <!-- time -->
+    <label for="e_time">Time:
+      <input name="e_time" id="e_time" type="time" required>
+    </label>
+
+    <!-- month -->
+    <label for="e_month">Month:
+      <input name="e_month" id="e_month" type="month" required>
+    </label>
+
+    <!-- week -->
+    <label for="e_week">week:
+      <input name="e_week" id="e_week" type="week" required>
+    </label>
+
+    <!-- Date Time Local -->
+    <label for="e_dtl">Date Time Local:
+      <input name="e_dtl" id="e_dtl" type="datetime-local" required>
+    </label>
+
+    <div>
+      <p>Select Gender:</p>
+      <!-- Radio buttons -->
+      <label for="e_male">
+        <input name="e_gender" id="e_male" type="radio" value="Male">
+        Male
+      </label>
+
+      <label for="e_female">
+        <input name="e_gender" id="e_female" type="radio" value="Female">
+        Female
+      </label>
+
+      <label for="e_other">
+        <input name="e_gender" id="e_other" type="radio" value="Other">
+        Other
+      </label>
+
+      <label for="e_pnts">
+        <input name="e_gender" id="e_pnts" type="radio" value="Prefer not to say">
+        Prefer not to say
+      </label>
+    </div>
+
+    <div>
+      <p>Food time selection</p>
+      <label for="e_breakfast">
+        <input name="e_food" id="e_breakfast" type="checkbox" value="Breakfast">
+        Breakfast
+      </label>
+
+      <label for="e_lunch">
+        <input name="e_food" id="e_lunch" type="checkbox" value="Lunch">
+        Lunch
+      </label>
+
+      <label for="e_dinner">
+        <input name="e_food" id="e_dinner" type="checkbox" value="Dinner">
+        Dinner
+      </label>
+    </div>
+
+    <button type="submit">Sign up</button>
+  </form>
+</body>
+</html>
